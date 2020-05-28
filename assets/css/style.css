@@ -638,7 +638,7 @@ Dropdown Main Menu
 }
 
 .sf-menu li:hover li:hover a {
-    color: #FF8C00;
+    color: rgb(60, 5, 155);
 }
 
 .sf-menu li:hover li:hover li a {
@@ -647,14 +647,16 @@ Dropdown Main Menu
 
 .sf-menu li:hover li:hover li:hover a {
     background: #fff;
-    color: #FF8C00;
+    color: rgb(60, 5, 155);
 }
 
 
 /*hover yoel*/
 
 .sf-menu>li>a:hover {
-    color: #FF8C00;
+    color: rgb(60, 5, 155);
+    background-color: #f2f2f263;
+    border-radius: 50px;
 }
 
 
@@ -686,7 +688,7 @@ Slicknav and Responsive
     }
     .slicknav_menu {
         display: block;
-        background: rgba(255, 140, 0, 0.8);
+        background: rgba(60, 5, 155);
     }
     /*
     intentando corregir el bug del scroll
@@ -1120,15 +1122,14 @@ News
     font-size: 18px;
     font-weight: 700;
     background: #fff;
-    color: #FF8C00;
+    color: rgb(35, 10, 75);
     position: relative;
     text-transform: uppercase;
-    border-bottom: 2px solid #FF8C00;
 }
 
 .news .heading h2 a {
     padding: 10px;
-    color: #FF8C00!important;
+    color: rgb(35, 10, 75)!important;
     display: block!important;
 }
 
@@ -1157,12 +1158,13 @@ News
 }
 
 .thumbnailcero {
-    padding: 0;
-    border-radius: 0;
     position: relative;
     border: 0;
-    background: #f2f3f3;
-    padding: 25px;
+    background: #fff;
+    padding: 10px;
+    margin: 5px auto 15px auto;
+    box-shadow: 10px 15px 20px 10px rgba(0, 0, 0, 0.057);
+    border-radius: 3px;
 }
 
 .news .thumbnail {
@@ -1177,7 +1179,6 @@ News
 .news .thumbnail .photo {
     width: 200px;
     height: 200px;
-    border-radius: 50%;
     background-position: center center;
     -webkit-background-size: cover;
     background-size: cover;
@@ -2839,7 +2840,6 @@ Google Map
 .news-featured {
     width: 100%;
     height: auto;
-    background: #fff;
     padding-top: 0px;
     padding-bottom: 0px;
     overflow: hidden;
@@ -2847,33 +2847,30 @@ Google Map
 
 .news-featured .item {
     width: 100%;
+    height: auto;
     background-position: center center;
     -webkit-background-size: cover;
     background-size: cover;
     position: relative;
+    box-shadow: 0px 45px 60px 0px rgba(0, 0, 0, 0.087);
 }
 
 .news-featured .first-col {
-    height: 480px;
-    border-radius: 10px;
+    /*height: 480px;
+    border-radius: 10px;*/
 }
 
 .news-featured .second-col {
-    height: 200px;
     margin-bottom: 30px;
-    border-radius: 10px;
 }
 
 .news-featured .text {
     font-family: 'Merriweather', sans-serif!important;
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 0;
     width: 100%;
     height: auto;
-    background: rgba(0, 0, 0, 0.5);
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
 }
 
 .news-featured .text a {
@@ -2889,7 +2886,7 @@ Google Map
 }
 
 .news-featured .text h2 {
-    color: #fff;
+    color: #000;
     font-weight: 700;
     font-size: 14px;
     margin-bottom: 0;
@@ -2897,7 +2894,7 @@ Google Map
 }
 
 .news-featured .text p {
-    color: #fff;
+    color: #000;
     margin-bottom: 0;
     font-size: 13px;
 }
@@ -2996,7 +2993,7 @@ Social Sidebar
 .search-sidebar input[type="submit"] {
     height: 30px;
     border: 0;
-    background: #333333;
+    background: rgb(60, 5, 155);
     color: #fff;
     padding-left: 10px;
     padding-right: 10px;

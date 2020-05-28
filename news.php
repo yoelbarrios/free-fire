@@ -37,6 +37,8 @@ $statement->execute(array($updated_total_view,$_REQUEST['slug']));
 ?>
 
 <!-- Blog Start -->
+<!-- start detalles -->
+
 <div class="news">
 	<div class="container">
 		<div class="row">
@@ -45,7 +47,7 @@ $statement->execute(array($updated_total_view,$_REQUEST['slug']));
 					<div class="col-sm-12 col-md-12">
 						<div class="thumbnail">
 													
-							<div class="photo" style="background-image: url(<?php echo BASE_URL; ?>assets/uploads/<?php echo $photo; ?>);width:300px;height:300px;"></div>
+							<div class="photo" style="background-image: url(<?php echo BASE_URL; ?>assets/uploads/<?php echo $photo; ?>);width:100%";height:300px;"></div>
 							
 							<div class="caption">
 								<h3><?php echo $news_title; ?></h3>
@@ -99,6 +101,7 @@ $statement->execute(array($updated_total_view,$_REQUEST['slug']));
 		</div>		
 	</div>
 </div>
+<!-- end detalles -->
 <!-- Blog End -->
 
 <?php require_once('footer.php'); ?>

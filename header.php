@@ -144,14 +144,10 @@ foreach ($result as $row)
 			font-family: "Merriweather", serif;
 			font-size: 18px;
 			font-weight: 700;
-			background: #fff;
-			color: #FF8C00;
+			color: rgb(36,10,78);
 			text-align: center;
 			position: relative;
 			text-transform: uppercase;
-			border-bottom: 2px solid #FF8C00;
-
-			
 		}
 	</style>
 </head>

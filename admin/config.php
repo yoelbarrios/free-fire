@@ -18,7 +18,7 @@ $dbuser = 'root';
 $dbpass = '';
 
 // Defining base url
-define("BASE_URL", "http://localhost/battleff/");
+define("BASE_URL", "http://localhost/free-fire/");
 //define("BASE_URL", "http://localhost/index.php");
 
 

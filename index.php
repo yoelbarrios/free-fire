@@ -14,9 +14,18 @@
 			foreach ($result as $row) 
 			{
 				?>
+				<!--start card inicio -->
 				<div class="thumbnailcero">
-				<div class="item first-col" style="background-image: url(<?php echo BASE_URL; ?>assets/uploads/<?php if($row['photo']=='') { echo 'no-photo1.jpg'; } else { echo $row['photo']; } ?>);">
-					<div class="text">
+
+				<!--start imagen al inicio -->
+				<div class="item first-col" >
+					<img style="max-width:100%;width:auto;height:auto;" src="<?php echo BASE_URL; ?>assets/uploads/<?php if($row['photo']=='') { echo 'no-photo1.jpg'; } else { echo $row['photo']; } ?>" alt="">
+				</div>
+				
+				<!--end imagen al inicio -->
+
+				<!--start titulo de card -->
+				<div class="text">
 						<div class="inner">
 							<h2><?php echo $row['news_title']; ?></h2>
 							<p>
@@ -41,16 +50,20 @@
 							</p>
 						</div>
 						<a href="<?php echo BASE_URL.URL_NEWS.$row['news_slug']; ?>"></a>
+
+						
 					</div>
+					
+				<!--end titulo de card -->
 				</div>
-				</div>
+				<!--end card inicio -->
 				<?php
 				break;
 			}
 			?>
 			</div>
 		</div>
-
+			<!--start images secundarias -->
 		<div class="thumbnailcero">
 		<div class="row" style="margin-top: 30px;">			
 			
@@ -68,7 +81,8 @@
 				if($i>4) {break;}
 				?>
 				<div class="col-md-4">
-					<div class="item second-col" style="background-image: url(<?php echo BASE_URL; ?>assets/uploads/<?php if($row['photo']=='') { echo 'no-photo1.jpg'; } else { echo $row['photo']; } ?>);">
+					<div class="item second-col">
+						<img style="max-width:100%;width:auto;height:auto;" src="<?php echo BASE_URL; ?>assets/uploads/<?php if($row['photo']=='') { echo 'no-photo1.jpg'; } else { echo $row['photo']; } ?>" alt="">
 						<div class="text">
 							<div class="inner">
 								<h2><?php echo $row['news_title']; ?></h2>
